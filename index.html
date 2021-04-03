@@ -10,8 +10,15 @@
 </head>
 
 <body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="edit-button">
+        <button class="edit" id="changePixel" onClick="changePixels()">Change pixel Size</button>
+        <button class="edit" id="black" onClick="changeColorPixels('black')">Black</button>
+        <button class="edit">Choose Color<input type="color" id="userColor" value="#ff0000"></button>
+        <button class="edit" id="eraser" onClick="changeColorPixels('white')">Eraser</button>
+        <button class="edit" id="reset" onClick="resetColorPixels()">Reset</button>
+    </div>
     <div class="container">
-
     </div>
 </body>
 <script src="index.js"></script>
